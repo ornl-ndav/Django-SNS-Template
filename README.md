@@ -1,2 +1,7 @@
-# sns-reduction
-sns-reduction
+# Django-SNS-Template
+
+Template to develop web projects with SNS LDAP Authentication
+
+# Documentation
+
+**TODO**
