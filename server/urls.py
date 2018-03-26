@@ -23,6 +23,6 @@ from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^users/', include('server.apps.users.urls', namespace='users') ),
+    url(r'^users/', include(('server.apps.users.urls', 'users') , namespace='users') ),
     url(r'^$', login_required(TemplateView.as_view(template_name='index.html')), name='index'),
 ]
